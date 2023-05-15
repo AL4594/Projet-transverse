@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://font1.tres" type="DynamicFont" id=1]
+[ext_resource path="res://photorule.webp" type="Texture" id=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Photorule" type="Sprite" parent="."]
+position = Vector2( 512, 302 )
+scale = Vector2( 1, 0.582031 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 1 )
+text = "Title is a platformer type game where \"robot name and robot2name\" got lost into the multiverse.
+Your goal is to help him/them to reach the gate and finally to get back to their home.
+
+to play in singleplayer you can wether use the keyboard with keys z s q d or use a controller device
+to play in multiplayer  the first player use z s q d keys and the second player use the arrows or you can also use controller devices
+
+
+Noah Hemon game director
+Ian Rouvrais game designer
+LE NOGUES Antoine UI designer
+Oscar Chief of staff
+UI/UX/developper (maybe)
+
+Jobless studio (™),
+All right reserved."

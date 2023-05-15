@@ -1,0 +1,87 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://selected_button.tres" type="StyleBox" id=1]
+[ext_resource path="res://nonselectedbutton.tres" type="StyleBox" id=2]
+[ext_resource path="res://goals.jpg" type="Texture" id=3]
+[ext_resource path="res://Menu_play.gd" type="Script" id=4]
+[ext_resource path="res://Menu_quit.gd" type="Script" id=5]
+[ext_resource path="res://Menu_rules.gd" type="Script" id=6]
+[ext_resource path="res://Menu_multiplayer.gd" type="Script" id=7]
+[ext_resource path="res://font1.tres" type="DynamicFont" id=8]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Goals" type="Sprite" parent="."]
+position = Vector2( 3.90625e-05, -5.04175 )
+scale = Vector2( 1.28, 1.34 )
+texture = ExtResource( 3 )
+offset = Vector2( 400, 228.762 )
+
+[node name="Title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -62.0
+margin_right = 64.0
+margin_bottom = 80.0
+custom_fonts/font = ExtResource( 8 )
+text = "DARK SASUKE JUMP
+"
+
+[node name="Menu_singleplayer" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -128.0
+margin_top = -28.0
+margin_right = 128.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 8 )
+custom_styles/hover = ExtResource( 1 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/focus = ExtResource( 1 )
+custom_styles/normal = ExtResource( 2 )
+text = "SINGLEPLAYER"
+script = ExtResource( 4 )
+
+[node name="Menu_multiplayer" type="Button" parent="."]
+margin_left = 384.0
+margin_top = 344.0
+margin_right = 640.0
+margin_bottom = 392.0
+rect_pivot_offset = Vector2( -752, -184 )
+custom_fonts/font = ExtResource( 8 )
+custom_styles/hover = ExtResource( 1 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/focus = ExtResource( 1 )
+custom_styles/normal = ExtResource( 2 )
+text = "MULTIPLAYER"
+script = ExtResource( 7 )
+
+[node name="Menu_rules" type="Button" parent="."]
+margin_left = 384.0
+margin_top = 416.0
+margin_right = 640.0
+margin_bottom = 464.0
+custom_fonts/font = ExtResource( 8 )
+custom_styles/hover = ExtResource( 1 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/focus = ExtResource( 1 )
+custom_styles/normal = ExtResource( 2 )
+text = "RULES"
+script = ExtResource( 6 )
+
+[node name="Menu_quit" type="Button" parent="."]
+margin_left = 384.0
+margin_top = 488.0
+margin_right = 640.0
+margin_bottom = 536.0
+custom_fonts/font = ExtResource( 8 )
+custom_styles/hover = ExtResource( 1 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/focus = ExtResource( 1 )
+custom_styles/normal = ExtResource( 2 )
+text = "QUIT"
+script = ExtResource( 5 )
