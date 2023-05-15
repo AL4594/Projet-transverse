@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="MENU"
+config/name="Projet_transverse"
 run/main_scene="res://menu1.tscn"
 config/icon="res://icon.png"
 

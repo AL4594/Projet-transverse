@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://font1.tres" type="DynamicFont" id=1]
-[ext_resource path="res://photorule.webp" type="Texture" id=2]
+[ext_resource path="res://Premium_Vector___Futuristic_technological_wallpaper.jpg" type="Texture" id=2]
 [ext_resource path="res://selected_button.tres" type="StyleBox" id=3]
 [ext_resource path="res://nonselectedbutton.tres" type="StyleBox" id=4]
 [ext_resource path="res://Righteous-Regular.ttf" type="DynamicFontData" id=5]
@@ -16,18 +16,20 @@ anchor_bottom = 1.0
 margin_bottom = -24.0
 
 [node name="Photorule" type="Sprite" parent="."]
-position = Vector2( 512, 290 )
-scale = Vector2( 1, 0.558594 )
+position = Vector2( 513.5, 302 )
+scale = Vector2( 1.64377, 1.44365 )
 texture = ExtResource( 2 )
 
 [node name="Label" type="Label" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 97.0
+margin_top = 203.0
+margin_right = -49.0
+margin_bottom = 203.0
 custom_fonts/font = ExtResource( 1 )
 text = "Title is a platformer type game where \"robot name and robot2name\" got lost into the multiverse.
 Your goal is to help him/them to reach the gate and finally to get back to their home.
-
-
 
 
 
@@ -35,11 +37,13 @@ to play in singleplayer you can wether use the keyboard with keys z s q d or use
 to play in multiplayer  the first player use z s q d keys and the second player use the arrows or you can also use controller devices
 
 "
+autowrap = true
 
 [node name="Button" type="Button" parent="."]
-margin_top = 512.0
-margin_right = 192.0
-margin_bottom = 576.0
+margin_left = 49.0
+margin_top = 517.0
+margin_right = 241.0
+margin_bottom = 581.0
 custom_fonts/font = SubResource( 1 )
 custom_styles/hover = ExtResource( 3 )
 custom_styles/pressed = ExtResource( 3 )
