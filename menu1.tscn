@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://selected_button.tres" type="StyleBox" id=1]
 [ext_resource path="res://nonselectedbutton.tres" type="StyleBox" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://Menu_multiplayer.gd" type="Script" id=7]
 [ext_resource path="res://font1.tres" type="DynamicFont" id=8]
 [ext_resource path="res://Player1-sprite.png" type="Texture" id=9]
+[ext_resource path="res://menu_music.gd" type="Script" id=10]
+[ext_resource path="res://Hollow Knight OST - Resting Grounds.mp3" type="AudioStream" id=11]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Background"
@@ -195,6 +197,7 @@ animation = "default_left"
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 10 )
 
 [node name="Goals" type="Sprite" parent="."]
 position = Vector2( 111, 70 )
@@ -305,3 +308,6 @@ anims/walk_right = SubResource( 8 )
 tree_root = SubResource( 9 )
 anim_player = NodePath("../AnimationPlayer2")
 active = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )

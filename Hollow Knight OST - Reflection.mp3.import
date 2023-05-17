@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Hollow Knight OST - Reflection.mp3-a5e155f6debfd776c7778ad6c7366393.mp3str"
+
+[deps]
+
+source_file="res://Hollow Knight OST - Reflection.mp3"
+dest_files=[ "res://.import/Hollow Knight OST - Reflection.mp3-a5e155f6debfd776c7778ad6c7366393.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Hollow Knight OST - Resting Grounds.mp3-c0084d4d969ee174d238d7c8b0ed547a.mp3str"
+
+[deps]
+
+source_file="res://Hollow Knight OST - Resting Grounds.mp3"
+dest_files=[ "res://.import/Hollow Knight OST - Resting Grounds.mp3-c0084d4d969ee174d238d7c8b0ed547a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
